@@ -29,7 +29,7 @@ wall -n "  Architecture: $Archi
   Virtual CPU: $vCPU
   Memory usage: $Mem
   Disk usage: $txt_DiskUsage
-  CPU usafe: $CPUUsage
+  CPU usafe: $txt_CPUUsage
   Last boot: $LastBoot
   LVM are$ActiveLVM used
   TCP connections: $TCP_Connections
