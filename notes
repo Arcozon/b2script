@@ -1,0 +1,21 @@
+--USER
+	awk -F: '{print $1}' /etc/passwd
+	userdel // adduser
+
+--GROUP
+	groupadd GROUP
+	usermod -[a]G GROUP USER
+
+--HOSTNAME
+	hostname
+	/etc/hostname
+
+--PASSWORD
+	/etc/pam.d/common-password
+
+--SUDO
+	/etc/sudoers // visudo
+
+SSH // UFW
+	systemctl status
+	sudo ufw status/allow/delete
