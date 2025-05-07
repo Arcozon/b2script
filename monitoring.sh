@@ -24,14 +24,14 @@ Nb_Users=$(who | wc -l)
 IP="IP "$(hostname -I | awk '{printf $1}')"  ("$(ip link | grep link/ether | awk 'NR==1{print $2}')")"
 NbSudo=$(cat /var/log/sudo/sudo.log | grep -c COMMAND)
 
-wall -n "	Architecture: $Archi
-Physical CPU: $pCPU
-Virtual CPU: $vCPU
-Memory usage: $Mem
-Disk usage: $txt_DiskUsage
-CPU usafe: $CPUUsage
-Last boot: $LastBoot
-LVM are$ActiveLVM used
-TCP connections: $TCP_Connections
-User connected: $Nb_Users
-Sudo commands: $NbSudo" 
+wall -n "  Architecture: $Archi
+  Physical CPU: $pCPU
+  Virtual CPU: $vCPU
+  Memory usage: $Mem
+  Disk usage: $txt_DiskUsage
+  CPU usafe: $CPUUsage
+  Last boot: $LastBoot
+  LVM are$ActiveLVM used
+  TCP connections: $TCP_Connections
+  User connected: $Nb_Users
+  Sudo commands: $NbSudo" 
