@@ -12,6 +12,7 @@
 
 --PASSWORD
 	/etc/pam.d/common-password
+	/etc/login.defs
 
 --SUDO
 	/etc/sudoers // visudo
