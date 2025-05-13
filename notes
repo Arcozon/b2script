@@ -17,6 +17,7 @@
 --SUDO
 	/etc/sudoers // visudo
 
-SSH // UFW
+--PACKAGE
+	apt list --installed | grep [SSH|UFW|SUDO]
 	systemctl status
 	sudo ufw status/allow/delete
